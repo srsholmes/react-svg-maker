@@ -12053,7 +12053,7 @@ let App = React.createClass({
             </g>
           </g>
         </svg>
-        <h2>This is another generated SVG</h2>
+        <h2>This is another generated SVG, with bits missing (work in progress)</h2>
         <ReactSVG {...svgDATA_03}/>
       </div>
     )
