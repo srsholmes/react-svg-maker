@@ -21,7 +21,7 @@ export default function makeElements(el, type, componentTypes, options) {
         return (<polyline id={el.id} stroke={el.stroke} strokeWidth={el.strokeWidth} points={el.points} fill={el.fill}/>);
         break;
       case 'polygon':
-        return (<polygon key={i} onClick={() => options.changePolygon(i)} id={el.id} fill={el.fill} points={el.points}/>);
+        return (<polygon key={i} className={el.className} onClick={() => options.changePolygon(i)} id={el.id} fill={el.fill} points={el.points}/>);
         break;
       case 'circle':
         return (<circle fill={el.fill} cx={el.cx} cy={el.cy} r={el.r}/>);

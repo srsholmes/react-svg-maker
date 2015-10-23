@@ -26,4 +26,22 @@ html, body {
       width: 100%;
       height: auto; } }
 
+/* line 31, /Users/cabbio540/Sites/personal/react-svg-maker/app/scss/_base.scss */
+svg polygon {
+  cursor: pointer;
+  -webkit-transition: all 1.5s ease-in;
+          transition: all 1.5s ease-in;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center; }
+
+/* line 39, /Users/cabbio540/Sites/personal/react-svg-maker/app/scss/_base.scss */
+.spinner {
+  -webkit-transform: rotate(720deg);
+      -ms-transform: rotate(720deg);
+          transform: rotate(720deg); }
+
 /*# sourceMappingURL=sass */

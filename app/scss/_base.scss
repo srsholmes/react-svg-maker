@@ -26,3 +26,16 @@ html, body {
 		height: auto;
 	}
 }
+
+svg {
+	polygon {
+		cursor: pointer;
+		transition: all 1.5s ease-in;
+		transform: rotate(0deg);
+		transform-origin: center;
+	}
+}
+
+.spinner {
+	transform: rotate(720deg);
+}

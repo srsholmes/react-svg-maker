@@ -15,8 +15,6 @@ let App = React.createClass({
   render(){
     console.log('APP RENDER');
     const { changeHeading, changePolygon } = this.props;
-
-    console.log(this.props);
     return (
       <div>
         <h1>React SVG Maker</h1>
