@@ -7,6 +7,19 @@ import { svgDATA, svgDATA_02, svgDATA_03 } from '../constants/constants';
 
 let App = React.createClass({
   render(){
+    let options = {
+      pathFill: 'red',
+      polyClick: function(el){
+        console.log('PolyClick Function');
+        console.log(el);
+        
+      },
+      pathClick: function(el){
+        console.log('Path Click Function');
+        console.log(el);
+        
+      }
+    };
     return (
       <div>
         <h1>React SVG Maker</h1>
@@ -482,7 +495,7 @@ let App = React.createClass({
             51.4,263.1 50,267.1 "/>
         </svg>
         <h2>This is the generated SVG</h2>
-        <ReactSVG {...svgDATA}/>
+        <ReactSVG {...svgDATA} options={options}/>
         <h2>This is an original SVG</h2>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 600 1060" enable-background="new 0 0 600 1060">
           <g id="elements">
@@ -1470,7 +1483,7 @@ let App = React.createClass({
           </g>
         </svg>
         <h2>This is another generated SVG</h2>
-        <ReactSVG {...svgDATA_02}/>
+        <ReactSVG {...svgDATA_02} options={options}/>
         <h2>One more example</h2>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 542.4 557.3" enable-background="new 0 0 542.4 557.3" >
           <g id="DesignElements">
@@ -12054,7 +12067,7 @@ let App = React.createClass({
           </g>
         </svg>
         <h2>This is another generated SVG, with bits missing (work in progress)</h2>
-        <ReactSVG {...svgDATA_03}/>
+        <ReactSVG {...svgDATA_03} options={options}/>
       </div>
     )
   }
