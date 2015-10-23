@@ -21,7 +21,7 @@ let App = React.createClass({
       <div>
         <h1>React SVG Maker</h1>
         <h3 onClick={changeHeading}>{this.props.heading}</h3>
-        <h2>This is the generated SVG. Try clicking on it and viewing the console</h2>
+        <h2>This is the generated SVG. Click the stars</h2>
         <ReactSVG svgData={this.props.svg_01} options={this.props} />
         <h2>This is the original SVG</h2>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 163.8 187.8 210" enable-background="new 0 163.8 187.8 210">
