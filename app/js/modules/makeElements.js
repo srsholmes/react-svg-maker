@@ -28,7 +28,7 @@ export default function makeElements(el, type, componentTypes, options) {
         break;
       case 'clipPath':
         let comp_01 = loopElement(el, componentTypes, options);
-        return (<defs id={el.id}>{comp_01}</defs>)           
+        return (<clipPath id={el.id}>{comp_01}</clipPath>)           
         break;
       case 'defs':
         let comp_02 = loopElement(el, componentTypes, options);
