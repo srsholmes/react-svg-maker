@@ -9,9 +9,9 @@ export function changeHeading() {
   };
 }
 
-export function changePolygon() {
+export function changePolygon(i) {
   return {
-    type: CHANGE_POLYGON
+    type: CHANGE_POLYGON, i
   };
 }
 
