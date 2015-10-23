@@ -3,10 +3,10 @@ import loopElement from './loopElement';
 
 export default function makeElements(el, type, componentTypes, options) {
   let arr = Array.isArray(el) ? el : [ el ];
-  arr = arr.map(el => {
+  arr = arr.map((el, i) => {
     switch(type) {
       case 'path':
-        return (<path onClick={options.pathClick.bind(null, el)} fill={el.fill} d={el.d} stroke={el.stroke} strokeWidth={el.strokeWidth} strokeLinejoin={el.strokeLinejoin} strokeMiterlimit={el.strokeMiterlimit} strokeDasharray={el.strokeDasharray}/>);
+        return (<path fill={el.fill} d={el.d} stroke={el.stroke} strokeWidth={el.strokeWidth} strokeLinejoin={el.strokeLinejoin} strokeMiterlimit={el.strokeMiterlimit} strokeDasharray={el.strokeDasharray}/>);
         break;
       case 'text':
         return (<text id={el.id} transform={el.transform} fill={el.fill} fontFamily={el.fontFamily} fontSize={el.fontSize}>{el.text}</text>);
@@ -21,7 +21,7 @@ export default function makeElements(el, type, componentTypes, options) {
         return (<polyline id={el.id} stroke={el.stroke} strokeWidth={el.strokeWidth} points={el.points} fill={el.fill}/>);
         break;
       case 'polygon':
-        return (<polygon onClick={options.polyClick.bind(null, el)} id={el.id} fill={el.fill} points={el.points}/>);
+        return (<polygon onClick={options.changePolygon.bind(null, el, i)} id={el.id} fill={el.fill} points={el.points}/>);
         break;
       case 'circle':
         return (<circle fill={el.fill} cx={el.cx} cy={el.cy} r={el.r}/>);
