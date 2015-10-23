@@ -1,7 +1,5 @@
 import React from 'react';
 import loopElement from './loopElement';
-// circle clipPath defs ellipse g line linearGradient mask path pattern polygon polyline
-// radialGradient rect stop svg text tspan
 
 export default function makeElements(el, type, componentTypes) {
   let arr = Array.isArray(el) ? el : [ el ];

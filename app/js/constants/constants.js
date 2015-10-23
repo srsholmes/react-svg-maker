@@ -11713,7 +11713,7 @@ const svgDATA_03 = {
                         {
                             "fill": "url(#SVGID_6_)",
                             "stroke": "#FFFFFF",
-                            "stroke-width": "2",
+                            "strokeWidth": "2",
                             "d": "M41.5,46.8h-12L19,13.5h10.8l5.7,20.2h0.1l5.6-20.2h11                 L41.5,46.8z"
                         }
                     ],

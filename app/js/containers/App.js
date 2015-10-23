@@ -482,7 +482,7 @@ let App = React.createClass({
             51.4,263.1 50,267.1 "/>
         </svg>
         <h2>This is the generated SVG</h2>
-        <ReactSVG {...svgDATA} shapes={['polygon']}/>
+        <ReactSVG {...svgDATA}/>
         <h2>This is an original SVG</h2>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 600 1060" enable-background="new 0 0 600 1060">
           <g id="elements">
@@ -1470,7 +1470,7 @@ let App = React.createClass({
           </g>
         </svg>
         <h2>This is another generated SVG</h2>
-        <ReactSVG {...svgDATA_02} shapes={['g', 'path']}/>
+        <ReactSVG {...svgDATA_02}/>
         <h2>One more example</h2>
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 542.4 557.3" enable-background="new 0 0 542.4 557.3" >
           <g id="DesignElements">
@@ -12054,7 +12054,7 @@ let App = React.createClass({
           </g>
         </svg>
         <h2>This is another generated SVG</h2>
-        <ReactSVG {...svgDATA_03} shapes={['g', 'path']}/>
+        <ReactSVG {...svgDATA_03}/>
       </div>
     )
   }
