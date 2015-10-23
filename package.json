@@ -1,0 +1,49 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.0.2",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js default",
+    "serve": "forever start ./node_modules/http-server/bin/http-server -p 80 -d false",
+    "build": "NODE_ENV=production ./node_modules/gulp/bin/gulp.js prod",
+    "prod": "NODE_ENV=production ./node_modules/gulp/bin/gulp.js prod && npm run serve"
+  },
+  "author": "Simon Holmes",
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-runtime": "^5.5.6",
+    "babelify": "^6.1.x",
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.6",
+    "express": "^4.13.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-if": "^1.2.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.0.x",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.2.0",
+    "http-server": "^0.8.0",
+    "livereactload": "^2.0.4",
+    "morgan": "^1.6.1",
+    "react-proxy": "^1.1.1",
+    "react-router": "^1.0.0-rc1",
+    "run-sequence": "^1.1.1",
+    "uglifyify": "^3.0.1",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.x"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.0",
+    "redux-logger": "^2.0.4",
+    "whatwg-fetch": "^0.9.0"
+  }
+}
