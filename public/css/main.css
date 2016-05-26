@@ -27,7 +27,7 @@ html, body {
       height: auto; } }
 
 /* line 31, /Users/cabbio540/Sites/personal/react-svg-maker/app/scss/_base.scss */
-svg polygon {
+svg polygon, svg paths {
   cursor: pointer;
   -webkit-transition: all 1.5s ease-in;
           transition: all 1.5s ease-in;

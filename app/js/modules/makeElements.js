@@ -6,7 +6,7 @@ export default function makeElements(el, type, componentTypes, options) {
   arr = arr.map((el, i) => {
     switch(type) {
       case 'path':
-        return (<path fill={el.fill} d={el.d} stroke={el.stroke} strokeWidth={el.strokeWidth} strokeLinejoin={el.strokeLinejoin} strokeMiterlimit={el.strokeMiterlimit} strokeDasharray={el.strokeDasharray}/>);
+        return (<path fill={el.fill}  key={i} className={el.className} onClick={() => options.changePath(i)} d={el.d} stroke={el.stroke} strokeWidth={el.strokeWidth} strokeLinejoin={el.strokeLinejoin} strokeMiterlimit={el.strokeMiterlimit} strokeDasharray={el.strokeDasharray}/>);
         break;
       case 'text':
         return (<text id={el.id} transform={el.transform} fill={el.fill} fontFamily={el.fontFamily} fontSize={el.fontSize}>{el.text}</text>);
